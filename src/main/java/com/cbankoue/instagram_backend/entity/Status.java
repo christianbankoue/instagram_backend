@@ -10,7 +10,7 @@ import java.util.Date;
 public class Status {
     @Id
     @GeneratedValue
-    private Long ind;
+    private Long id;
 
     private String path;
 
@@ -19,5 +19,5 @@ public class Status {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private Users users;
+    private User user;
 }
